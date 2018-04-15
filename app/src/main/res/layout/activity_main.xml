@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jose.apploginandpassword.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="@+id/passText"
+        app:layout_constraintStart_toStartOf="@+id/passText"
+        app:layout_constraintTop_toBottomOf="@+id/passText" />
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="314dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="23dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/loginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TittleText" />
+
+    <EditText
+        android:id="@+id/TittleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="125dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="           Tela de Login"
+        app:layout_constraintBottom_toTopOf="@+id/passText"
+        app:layout_constraintStart_toStartOf="@+id/passText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:text="Logar"
+        app:layout_constraintBottom_toTopOf="@+id/SavePassButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText" />
+
+    <TextView
+        android:id="@+id/SavePasstextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="111dp"
+        android:text="Salvar Senha?"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SavePassButton"
+        app:layout_constraintEnd_toStartOf="@+id/SavePassButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SavePassButton"
+        android:layout_width="97dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="99dp"
+        android:text="Sim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SavePasstextView"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+</android.support.constraint.ConstraintLayout>
